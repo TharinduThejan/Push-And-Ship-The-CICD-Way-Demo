@@ -2,8 +2,7 @@ name: App Test
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-
-  jobs:
+jobs:
   test:
     runs-on: ubuntu-latest
     steps:
@@ -13,5 +12,5 @@ on:
         uses: action/setup-node@v4
         with:
           node-version: 18
-      - name: Check node version
+      - name: Check version
         run: node -v
