@@ -14,7 +14,7 @@ app.post("/add", (req, res) => {
 
 if (require.main === module) {
   app.listen(8080, () => {
-    console.log("API is running on port 8080");
+    console.log("APIrunning on port 8080");
   });
 }
 
